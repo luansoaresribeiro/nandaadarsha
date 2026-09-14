@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nanda Adarsha — Yoga & Bem-Estar</title>
+  <link rel="icon" type="image/png" href="images/logo-new.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -462,11 +463,10 @@
       width: 36px;
       height: 36px;
       object-fit: contain;
-      opacity: 0.18;
-      filter: brightness(0) invert(1) sepia(1) saturate(2) hue-rotate(5deg);
-      transition: opacity 0.3s;
+      opacity: 0.85;
+      transition: opacity 0.3s, transform 0.3s;
     }
-    .class-card:hover .class-card__logo { opacity: 0.38; }
+    .class-card:hover .class-card__logo { opacity: 1; transform: scale(1.06); }
 
     /* logo beside benefit numbers */
     .benefit-row__num-wrap {
@@ -479,8 +479,6 @@
       width: 28px;
       height: 28px;
       object-fit: contain;
-      opacity: 0.5;
-      filter: brightness(0) saturate(100%) invert(72%) sepia(38%) saturate(400%) hue-rotate(5deg) brightness(95%);
     }
 
     /* logo in final cta */
@@ -488,8 +486,6 @@
       width: 64px;
       height: 64px;
       object-fit: contain;
-      opacity: 0.22;
-      filter: brightness(0) invert(1);
       margin-bottom: 24px;
     }
 
@@ -542,7 +538,7 @@
 
     /* ─── SECTION 5 — BENEFITS ─── */
     .benefits {
-      background: #0e0704;
+      background: #2b1a10;
       padding: 120px 0;
     }
     .benefits__title {
@@ -590,8 +586,10 @@
       max-width: 420px;
     }
     .benefit-row__image {
-      background: radial-gradient(ellipse at 40% 50%, #4a2010 0%, #1e0a04 60%, #0e0704 100%);
+      background: radial-gradient(ellipse at 40% 50%, #6b4226 0%, #3d2415 60%, #2b1a10 100%);
       min-height: 400px;
+      background-size: cover;
+      background-position: center;
     }
     /* alternating: even rows swap order */
     .benefit-row:nth-child(even) .benefit-row__text { order: 2; }
@@ -898,6 +896,23 @@
       opacity: 0.4;
       margin-top: 32px;
     }
+    .final-cta__social {
+      display: flex;
+      gap: 22px;
+      margin-top: 8px;
+    }
+    .final-cta__social a {
+      color: var(--cream);
+      opacity: 0.6;
+      transition: opacity 0.3s, color 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .final-cta__social a:hover {
+      opacity: 1;
+      color: var(--gold);
+    }
 
     /* ─── MOBILE ─── */
     @media (max-width: 768px) {
@@ -941,29 +956,32 @@
     <!-- NAV -->
     <nav class="nav">
       <span class="nav__tag">#yoga</span>
-      <a class="nav__logo" href="#">
-        Nanda Adarsha
-        <span>professora de yoga</span>
+      <a class="nav__logo" href="#" style="display:flex;align-items:center;gap:10px">
+        <img src="images/logo-new.png" alt="" style="width:32px;height:32px;object-fit:contain;flex-shrink:0">
+        <span style="display:inline-block">
+          Nanda Adarsha
+          <span>professora de yoga</span>
+        </span>
       </a>
     </nav>
 
     <!-- HEADLINE -->
     <div class="hero__content">
       <h1 class="hero__headline">
-        <span class="word">FLUA</span><br>
-        <span class="word">LIVREMENTE.</span><br>
-        <span class="word">VIVA</span> <span class="word">COM</span><br>
-        <em><span class="word">PRESENÇA.</span></em>
+        <span class="word">EXISTE</span> <span class="word">UM</span><br>
+        <span class="word">LUGAR</span> <span class="word">DE</span> <em><span class="word">CALMA</span></em><br>
+        <span class="word">DENTRO</span> <span class="word">DE</span><br>
+        <span class="word">VOCÊ.</span>
       </h1>
       <div class="hero__divider"></div>
       <p class="hero__sub">Yoga · Meditação · Bem-Estar</p>
-      <a class="hero__cta" href="#">Comece sua jornada</a>
+      <a class="hero__cta" href="#produtos">Comece sua jornada</a>
     </div>
 
     <!-- BOTTOM -->
     <div class="hero__bottom">
       <div class="hero__script-block">
-        <span class="hero__script-label">com</span>
+        <span class="hero__script-label">Yoga com</span>
         <span class="hero__script-name">Nanda Adarsha</span>
       </div>
       <div class="hero__scroll">
@@ -979,25 +997,25 @@
   <section class="sobre">
     <div class="sobre__grid">
       <div data-reveal>
-        <h2 class="sobre__heading">RESPIRE,<br>SE ALONGUE,<br>SE TRANSFORME.</h2>
+        <h2 class="sobre__heading">É PRECISO ACALMAR<br>OS MOVIMENTOS DA MENTE<br>PARA ACESSAR ESSE LUGAR.</h2>
       </div>
       <div class="sobre__right" data-reveal>
         <div class="sobre__divider"></div>
         <p class="sobre__text">
-          Nanda Adarsha é professora de yoga com mais de 8 anos de experiência, especializada em unir movimento, respiração e presença para transformar corpo e mente. Sua abordagem é acolhedora, intuitiva e profundamente enraizada nas tradições do yoga clássico e contemporâneo. Cada aula é uma convite ao autoconhecimento — um espaço seguro para respirar fundo, se mover com intenção e reconectar com o que realmente importa.
+          "Comece de onde você está. O Yoga não exige perfeição, apenas presença."
         </p>
         <div class="sobre__stats">
           <div class="sobre__stat">
-            <span class="sobre__stat-num">8+</span>
-            <span class="sobre__stat-label">anos de experiência</span>
+            <span class="sobre__stat-num">25+</span>
+            <span class="sobre__stat-label">anos de prática</span>
           </div>
           <div class="sobre__stat">
-            <span class="sobre__stat-num">500+</span>
-            <span class="sobre__stat-label">alunos transformados</span>
+            <span class="sobre__stat-num">20+</span>
+            <span class="sobre__stat-label">anos como professora</span>
           </div>
           <div class="sobre__stat">
-            <span class="sobre__stat-num">15+</span>
-            <span class="sobre__stat-label">estilos de yoga</span>
+            <span class="sobre__stat-num">2</span>
+            <span class="sobre__stat-label">formações em yoga</span>
           </div>
         </div>
       </div>
@@ -1021,45 +1039,65 @@
   <!-- ═══════════════════════════════════════════
        SECTION 4 — SUA JORNADA COMEÇA AQUI
   ═══════════════════════════════════════════ -->
-  <section class="aulas">
+  <section class="aulas" id="produtos">
     <div class="aulas__grid">
       <div class="aulas__left" data-reveal>
-        <span class="aulas__label">Aulas</span>
-        <h2 class="aulas__heading">SUA JORNADA<br>COMEÇA AQUI</h2>
-        <p class="aulas__body">Classes para todos os níveis — do iniciante ao avançado. Encontre o ritmo que é seu.</p>
-        <a class="aulas__btn" href="#">Ver Preços</a>
+        <span class="aulas__label">Pratique Online</span>
+        <h2 class="aulas__heading">SEU MERGULHO<br>PRA DENTRO<br>COMEÇA AQUI</h2>
+        <p class="aulas__body">Programas guiados de yoga e meditação para praticar no seu tempo, onde você estiver.</p>
+        <a class="aulas__btn" href="https://wa.me/5521998364101" target="_blank" rel="noopener">Tirar Dúvidas no WhatsApp</a>
       </div>
       <div class="aulas__cards">
-        <div class="class-card" data-reveal style="position:relative">
-          <img src="images/logo.png" alt="" class="class-card__logo">
-          <h3 class="class-card__title">HATHA YOGA</h3>
+        <a class="class-card" data-reveal style="position:relative;text-decoration:none;color:inherit;cursor:pointer" href="https://pay.kiwify.com.br/vtYRmC8" target="_blank" rel="noopener">
+          <img src="images/logo-new.png" alt="" class="class-card__logo">
+          <h3 class="class-card__title">MEDITAÇÃO</h3>
           <div class="class-card__tags">
             <span class="class-card__tag">Todos os níveis</span>
-            <span class="class-card__tag">60 min</span>
+            <span class="class-card__tag">Acesso por 1 ano</span>
           </div>
-          <p class="class-card__desc">Uma prática suave e estruturada, ideal para quem está começando. Foco em posturas fundamentais, respiração consciente e alinhamento corporal.</p>
-          <div class="class-card__schedule">Seg · Qua · Sex — 07h00</div>
-        </div>
-        <div class="class-card" data-reveal style="position:relative">
-          <img src="images/logo.png" alt="" class="class-card__logo">
-          <h3 class="class-card__title">VINYASA FLOW</h3>
+          <p class="class-card__desc">Um espaço para desacelerar, aquietar a mente e voltar para si. Práticas guiadas de meditação para cultivar presença, clareza e equilíbrio — e fortalecer a conexão com a própria intuição.</p>
+          <div class="class-card__schedule">R$36,00 · Pagamento único · Acesso por 1 ano</div>
+        </a>
+        <a class="class-card" data-reveal style="position:relative;text-decoration:none;color:inherit;cursor:pointer" href="https://pay.kiwify.com.br/IAptaxc" target="_blank" rel="noopener">
+          <img src="images/logo-new.png" alt="" class="class-card__logo">
+          <h3 class="class-card__title">DESAFIO DE 21 DIAS</h3>
           <div class="class-card__tags">
-            <span class="class-card__tag">Intermediário</span>
-            <span class="class-card__tag">75 min</span>
+            <span class="class-card__tag">21 dias</span>
+            <span class="class-card__tag">~1h por aula</span>
           </div>
-          <p class="class-card__desc">Sequências dinâmicas que conectam movimento e respiração em um fluxo meditativo. Desenvolve força, equilíbrio e presença.</p>
-          <div class="class-card__schedule">Ter · Qui — 08h00 · Sáb — 09h00</div>
-        </div>
-        <div class="class-card" data-reveal style="position:relative">
-          <img src="images/logo.png" alt="" class="class-card__logo">
-          <h3 class="class-card__title">YIN &amp; MEDITAÇÃO</h3>
+          <p class="class-card__desc">A prática constante por 21 dias ajuda a estabelecer novos hábitos. Aulas organizadas para promover mais consciência corporal, flexibilidade, força, equilíbrio e tranquilidade mental — um convite a desacelerar e se reconectar consigo mesma.</p>
+          <div class="class-card__schedule">R$54,00 · Pagamento único · Acesso por 1 ano</div>
+        </a>
+        <a class="class-card" data-reveal style="position:relative;text-decoration:none;color:inherit;cursor:pointer" href="https://pay.kiwify.com.br/kU8angv" target="_blank" rel="noopener">
+          <img src="images/logo-new.png" alt="" class="class-card__logo">
+          <h3 class="class-card__title">RECONEXÃO PELO YOGA</h3>
           <div class="class-card__tags">
-            <span class="class-card__tag">Todos os níveis</span>
-            <span class="class-card__tag">90 min</span>
+            <span class="class-card__tag">30 aulas</span>
+            <span class="class-card__tag">30 a 40 min</span>
           </div>
-          <p class="class-card__desc">Posturas passivas de longa duração combinadas com meditação guiada. Restaura o sistema nervoso e libera tensões profundas.</p>
-          <div class="class-card__schedule">Sex — 19h30 · Dom — 10h00</div>
-        </div>
+          <p class="class-card__desc">Para quem quer iniciar no Yoga ou retomar uma prática adormecida. Um mês de práticas acessíveis e acolhedoras para desenvolver consciência corporal, equilíbrio, flexibilidade e presença.</p>
+          <div class="class-card__schedule">R$63,00 · Pagamento único · Acesso por 1 ano</div>
+        </a>
+        <a class="class-card" data-reveal style="position:relative;text-decoration:none;color:inherit;cursor:pointer" href="https://pay.kiwify.com.br/1JGNKdh" target="_blank" rel="noopener">
+          <img src="images/logo-new.png" alt="" class="class-card__logo">
+          <h3 class="class-card__title">AULAS GRAVADAS</h3>
+          <div class="class-card__tags">
+            <span class="class-card__tag">150+ horas</span>
+            <span class="class-card__tag">Acesso ilimitado</span>
+          </div>
+          <p class="class-card__desc">Pratique no seu tempo. Acesso ilimitado a toda a plataforma, com aulas para diferentes níveis e necessidades — de 1 hora, mais curtas, suaves, meditação, relaxamento e muito mais. Novas aulas toda semana.</p>
+          <div class="class-card__schedule">R$108,00 · Pagamento mensal</div>
+        </a>
+        <a class="class-card" data-reveal style="position:relative;text-decoration:none;color:inherit;cursor:pointer" href="https://pay.kiwify.com.br/hkoFsYF" target="_blank" rel="noopener">
+          <img src="images/logo-new.png" alt="" class="class-card__logo">
+          <h3 class="class-card__title">AULAS AO VIVO + PLATAFORMA COMPLETA</h3>
+          <div class="class-card__tags">
+            <span class="class-card__tag">Ao vivo · Quartas, 8h</span>
+            <span class="class-card__tag">+150h gravadas</span>
+          </div>
+          <p class="class-card__desc">A experiência mais completa: aulas ao vivo às quartas-feiras às 8h (horário de Brasília) com a Nanda, além de acesso ilimitado a toda a plataforma de aulas gravadas. Acompanhamento, constância e flexibilidade para aprofundar sua prática.</p>
+          <div class="class-card__schedule">R$180,00 · Pagamento mensal</div>
+        </a>
       </div>
     </div>
   </section>
@@ -1068,43 +1106,54 @@
        SECTION 5 — BENEFITS
   ═══════════════════════════════════════════ -->
   <section class="benefits">
-    <h2 class="benefits__title">POR QUE O YOGA MUDA TUDO</h2>
+    <h2 class="benefits__title">PORQUE O YOGA É TÃO TRANSFORMADOR</h2>
 
     <div class="benefit-row" data-reveal>
       <div class="benefit-row__text">
-        <div class="benefit-row__num-wrap"><span class="benefit-row__num">01</span><img src="images/logo.png" alt="" class="benefit-row__logo"></div>
-        <h3 class="benefit-row__heading">FORÇA E FLEXIBILIDADE</h3>
-        <p class="benefit-row__body">Desenvolva um corpo forte e ágil através de práticas que respeitam seus limites e os expandem progressivamente.</p>
+        <div class="benefit-row__num-wrap"><span class="benefit-row__num">01</span><img src="images/logo-new.png" alt="" class="benefit-row__logo"></div>
+        <h3 class="benefit-row__heading">O YOGA TRANSFORMA A MENTE</h3>
+        <p class="benefit-row__body">Mais do que alongar e fortalecer o corpo, o Yoga ensina a observar os pensamentos sem ser dominado por eles. Aos poucos, desenvolvemos mais clareza, equilíbrio emocional e discernimento para responder à vida em vez de apenas reagir.</p>
       </div>
-      <div class="benefit-row__image"></div>
+      <div class="benefit-row__image" style="background-image:url(images/pose-1.jpg)"></div>
     </div>
 
     <div class="benefit-row" data-reveal>
       <div class="benefit-row__text">
-        <div class="benefit-row__num-wrap"><span class="benefit-row__num">02</span><img src="images/logo.png" alt="" class="benefit-row__logo"></div>
-        <h3 class="benefit-row__heading">ALÍVIO DE ESTRESSE E CLAREZA MENTAL</h3>
-        <p class="benefit-row__body">O yoga ativa o sistema nervoso parassimpático, reduzindo o cortisol e promovendo foco e tranquilidade duradouros.</p>
+        <div class="benefit-row__num-wrap"><span class="benefit-row__num">02</span><img src="images/logo-new.png" alt="" class="benefit-row__logo"></div>
+        <h3 class="benefit-row__heading">O YOGA REGULA O SISTEMA NERVOSO</h3>
+        <p class="benefit-row__body">Através da respiração, do movimento e do relaxamento, o organismo sai do estado constante de estresse. Isso melhora o sono, reduz a ansiedade e cria uma sensação de calma que acompanha a pessoa além da prática.</p>
       </div>
-      <div class="benefit-row__image"></div>
+      <div class="benefit-row__image" style="background-image:url(images/pose-2.jpg)"></div>
     </div>
 
     <div class="benefit-row" data-reveal>
       <div class="benefit-row__text">
-        <div class="benefit-row__num-wrap"><span class="benefit-row__num">03</span><img src="images/logo.png" alt="" class="benefit-row__logo"></div>
-        <h3 class="benefit-row__heading">POSTURA MELHOR E ALÍVIO DE DORES</h3>
-        <p class="benefit-row__body">Corrija desequilíbrios posturais e alivie tensões crônicas com movimentos terapêuticos e conscientes.</p>
+        <div class="benefit-row__num-wrap"><span class="benefit-row__num">03</span><img src="images/logo-new.png" alt="" class="benefit-row__logo"></div>
+        <h3 class="benefit-row__heading">O YOGA DESPERTA A CONSCIÊNCIA CORPORAL</h3>
+        <p class="benefit-row__body">Aprendemos a perceber o corpo com mais atenção e sensibilidade. Essa consciência através dos ásanas aumenta a flexibilidade, fortalece a musculatura, desenvolve equilíbrio e estabilidade, amplia a mobilidade das articulações e ajuda a prevenir dores e lesões. Com o tempo, os movimentos se tornam mais eficientes, a respiração mais livre e o corpo passa a funcionar de forma mais integrada e saudável.</p>
       </div>
-      <div class="benefit-row__image"></div>
+      <div class="benefit-row__image" style="background-image:url(images/pose-3.jpg)"></div>
     </div>
 
     <div class="benefit-row" data-reveal>
       <div class="benefit-row__text">
-        <div class="benefit-row__num-wrap"><span class="benefit-row__num">04</span><img src="images/logo.png" alt="" class="benefit-row__logo"></div>
-        <h3 class="benefit-row__heading">PAZ INTERIOR E BEM-ESTAR EMOCIONAL</h3>
-        <p class="benefit-row__body">Cultive uma relação mais gentil consigo mesmo. O yoga é um caminho de autoconhecimento e equilíbrio emocional.</p>
+        <div class="benefit-row__num-wrap"><span class="benefit-row__num">04</span><img src="images/logo-new.png" alt="" class="benefit-row__logo"></div>
+        <h3 class="benefit-row__heading">O YOGA AUMENTA A ENERGIA VITAL (PRANA)</h3>
+        <p class="benefit-row__body">Na tradição do Yoga, uma respiração consciente e um corpo equilibrado permitem que a energia vital circule com mais liberdade. Isso se reflete em mais disposição, presença, saúde e equilíbrio físico e mental.</p>
       </div>
-      <div class="benefit-row__image"></div>
+      <div class="benefit-row__image" style="background-image:url(images/pose-1.jpg)"></div>
     </div>
+
+    <div class="benefit-row" data-reveal>
+      <div class="benefit-row__text">
+        <div class="benefit-row__num-wrap"><span class="benefit-row__num">05</span><img src="images/logo-new.png" alt="" class="benefit-row__logo"></div>
+        <h3 class="benefit-row__heading">O YOGA PROMOVE AUTOCONHECIMENTO</h3>
+        <p class="benefit-row__body">Talvez essa seja sua maior transformação. A prática nos aproxima da nossa verdadeira essência, ajuda a reconhecer padrões que nos limitam e nos dá ferramentas para viver com mais propósito, liberdade e autenticidade.</p>
+      </div>
+      <div class="benefit-row__image" style="background-image:url(images/pose-2.jpg)"></div>
+    </div>
+
+    <p class="final-cta__script" style="text-align:center;padding:64px 40px 0;max-width:820px;margin:0 auto">"O Yoga não transforma quem você é. Ele remove aquilo que impede você de expressar a sua melhor versão."</p>
   </section>
 
   <!-- ═══════════════════════════════════════════
@@ -1113,8 +1162,8 @@
   <section class="cta-mid" data-reveal>
     <p class="cta-mid__script">vamos juntos?</p>
     <h2 class="cta-mid__heading">COMECE HOJE.</h2>
-    <p class="cta-mid__sub">Primeira aula gratuita. Sem compromisso.</p>
-    <a class="cta-mid__btn" href="#">Agendar Aula Gratuita</a>
+    <p class="cta-mid__sub">Escolha o programa ideal para você e comece hoje mesmo.</p>
+    <a class="cta-mid__btn" href="#produtos">Ver Programas</a>
   </section>
 
   <!-- ═══════════════════════════════════════════
@@ -1127,73 +1176,73 @@
       <!-- ROW 1 — duplicated for seamless loop -->
       <div class="marquee-track marquee-track--row1">
         <div class="t-card">
-          <p class="t-card__quote">"O yoga com a Nanda mudou completamente minha relação com meu corpo. Aprendi a respirar de verdade pela primeira vez."</p>
+          <p class="t-card__quote">"Praticar yoga com a Nanda é viver um retorno para si mesma. A yoga mudou minha vida ao alinhar corpo, mente e alma em um espaço de pura calmaria. A Nanda foi um canal muito potente para essa transformação; sua condução tem uma sensibilidade rara que transforma movimento em presença e silêncio em paz."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Sofia M. · Rio de Janeiro</span>
+            <span class="t-card__name">Ellen Cocino · Recife</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"Cheguei com dores crônicas nas costas e em três meses o alívio foi incrível. As aulas são acolhedoras e muito bem conduzidas."</p>
+          <p class="t-card__quote">"Voltei a praticar Yoga através da plataforma da Nanda. Sigo com essa rotina que me faz tão bem. São muitas aulas disponíveis e ideais para minha necessidade. Feliz com essa possibilidade de praticar em casa e a qualquer momento."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Carla R. · São Paulo</span>
+            <span class="t-card__name">Flavia Castro · Rio de Janeiro</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"Nunca imaginei que o yoga me daria tanta clareza mental. Estou mais focada, mais calma e muito mais feliz no dia a dia."</p>
+          <p class="t-card__quote">"As aulas de yoga são maravilhosas. A professora é incrível, muito atenciosa, e transmite calma e confiança em cada prática. Faço aulas com ela há mais de dez anos, e cada aula continua sendo um momento especial do meu dia."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Ana Luiza F. · Curitiba</span>
+            <span class="t-card__name">Luciane Machado · Seattle, EUA</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"A Nanda tem um dom especial para guiar cada aluno no próprio ritmo. Me sinto vista e respeitada em cada aula."</p>
+          <p class="t-card__quote">"Fazer yoga com a Nanda é escolher uma vida mais saudável, com leveza, presença e consciência. Ela tem uma fala doce e uma energia que reverbera amor. Suas aulas nos conectam com a nossa essência e nos trazem de volta para o aqui e agora."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Beatriz T. · Florianópolis</span>
+            <span class="t-card__name">Vivi Soares · Rio de Janeiro</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"O Vinyasa Flow transformou minha disposição. Tenho mais energia, durmo melhor e me sinto mais forte do que aos 30 anos."</p>
+          <p class="t-card__quote">"Gratidão por compartilhar seu conhecimento, sua sensibilidade e por caminhar conosco. Você faz a diferença na vida de muitas pessoas."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Márcia L. · Belo Horizonte</span>
+            <span class="t-card__name">Adriana Carpegiane · Rio de Janeiro</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <!-- duplicate set -->
         <div class="t-card">
-          <p class="t-card__quote">"O yoga com a Nanda mudou completamente minha relação com meu corpo. Aprendi a respirar de verdade pela primeira vez."</p>
+          <p class="t-card__quote">"Praticar yoga com a Nanda é viver um retorno para si mesma. A yoga mudou minha vida ao alinhar corpo, mente e alma em um espaço de pura calmaria. A Nanda foi um canal muito potente para essa transformação; sua condução tem uma sensibilidade rara que transforma movimento em presença e silêncio em paz."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Sofia M. · Rio de Janeiro</span>
+            <span class="t-card__name">Ellen Cocino · Recife</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"Cheguei com dores crônicas nas costas e em três meses o alívio foi incrível. As aulas são acolhedoras e muito bem conduzidas."</p>
+          <p class="t-card__quote">"Voltei a praticar Yoga através da plataforma da Nanda. Sigo com essa rotina que me faz tão bem. São muitas aulas disponíveis e ideais para minha necessidade. Feliz com essa possibilidade de praticar em casa e a qualquer momento."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Carla R. · São Paulo</span>
+            <span class="t-card__name">Flavia Castro · Rio de Janeiro</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"Nunca imaginei que o yoga me daria tanta clareza mental. Estou mais focada, mais calma e muito mais feliz no dia a dia."</p>
+          <p class="t-card__quote">"As aulas de yoga são maravilhosas. A professora é incrível, muito atenciosa, e transmite calma e confiança em cada prática. Faço aulas com ela há mais de dez anos, e cada aula continua sendo um momento especial do meu dia."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Ana Luiza F. · Curitiba</span>
+            <span class="t-card__name">Luciane Machado · Seattle, EUA</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"A Nanda tem um dom especial para guiar cada aluno no próprio ritmo. Me sinto vista e respeitada em cada aula."</p>
+          <p class="t-card__quote">"Fazer yoga com a Nanda é escolher uma vida mais saudável, com leveza, presença e consciência. Ela tem uma fala doce e uma energia que reverbera amor. Suas aulas nos conectam com a nossa essência e nos trazem de volta para o aqui e agora."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Beatriz T. · Florianópolis</span>
+            <span class="t-card__name">Vivi Soares · Rio de Janeiro</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"O Vinyasa Flow transformou minha disposição. Tenho mais energia, durmo melhor e me sinto mais forte do que aos 30 anos."</p>
+          <p class="t-card__quote">"Gratidão por compartilhar seu conhecimento, sua sensibilidade e por caminhar conosco. Você faz a diferença na vida de muitas pessoas."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Márcia L. · Belo Horizonte</span>
+            <span class="t-card__name">Adriana Carpegiane · Rio de Janeiro</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
@@ -1202,124 +1251,98 @@
       <!-- ROW 2 — slightly different speed for depth -->
       <div class="marquee-track marquee-track--row2">
         <div class="t-card">
-          <p class="t-card__quote">"O Yin &amp; Meditação é a minha âncora semanal. Saio de cada aula renovada, como se tivesse dormido um sono profundo."</p>
+          <p class="t-card__quote">"As aulas da Nanda me trouxeram presença e consistência em um momento bem turbulento. Viraram um compromisso comigo mesma, um tempo que eu separo para olhar para dentro, me fortalecer e me reconectar."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Juliana P. · Recife</span>
+            <span class="t-card__name">Natália · São Paulo</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"Sou completamente iniciante e me senti à vontade desde a primeira aula. A Nanda explica tudo com muita paciência e cuidado."</p>
+          <p class="t-card__quote">"As aulas são incríveis! É uma superoportunidade para praticarmos yoga onde quer que estejamos. A Nanda é superatenciosa e conduz a prática com uma sensibilidade ímpar. Amo a flexibilidade de poder fazê-las em outro horário."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Fernanda C. · Porto Alegre</span>
+            <span class="t-card__name">Clara Castro · Paraná</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"Em seis meses de prática, minha postura melhorou tanto que colegas de trabalho perguntaram o que eu estava fazendo diferente."</p>
+          <p class="t-card__quote">"As aulas da Nanda me trouxeram presença e consistência em um momento bem turbulento. Viraram um compromisso comigo mesma, um tempo que eu separo para olhar para dentro, me fortalecer e me reconectar. Obrigada, Nanda, por criar esse espaço tão especial."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Renata M. · Brasília</span>
+            <span class="t-card__name">Nathalia · Dublin, Irlanda</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"A Nanda vai além do físico. Ela ensina a viver com mais consciência e presença. Uma professora que transforma de verdade."</p>
+          <p class="t-card__quote">"Nas aulas dela tem postura, respiração, encontro com meu silêncio, tem filosofia, tem yoga de verdade. Depois de algumas buscas encontrei a Nanda e nunca mais larguei."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Isabela V. · Salvador</span>
+            <span class="t-card__name">Viviane Serreti · Rio de Janeiro</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"Comecei o yoga para relaxar e acabei descobrindo uma versão mais forte e mais inteira de mim mesma. Recomendo de coração."</p>
+          <p class="t-card__quote">"As aulas de yoga da Nanda me fazem muito bem, já faz 8 anos que conheço o trabalho dela. A forma que ela apresenta a aula é muito estruturada, alinhando o corpo, a mente e o espírito naquele tempo em que se está presente na aula."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Priscila N. · Campinas</span>
+            <span class="t-card__name">Petci · Rio de Janeiro</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <!-- duplicate set -->
         <div class="t-card">
-          <p class="t-card__quote">"O Yin &amp; Meditação é a minha âncora semanal. Saio de cada aula renovada, como se tivesse dormido um sono profundo."</p>
+          <p class="t-card__quote">"As aulas da Nanda me trouxeram presença e consistência em um momento bem turbulento. Viraram um compromisso comigo mesma, um tempo que eu separo para olhar para dentro, me fortalecer e me reconectar."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Juliana P. · Recife</span>
+            <span class="t-card__name">Natália · São Paulo</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"Sou completamente iniciante e me senti à vontade desde a primeira aula. A Nanda explica tudo com muita paciência e cuidado."</p>
+          <p class="t-card__quote">"As aulas são incríveis! É uma superoportunidade para praticarmos yoga onde quer que estejamos. A Nanda é superatenciosa e conduz a prática com uma sensibilidade ímpar. Amo a flexibilidade de poder fazê-las em outro horário."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Fernanda C. · Porto Alegre</span>
+            <span class="t-card__name">Clara Castro · Paraná</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"Em seis meses de prática, minha postura melhorou tanto que colegas de trabalho perguntaram o que eu estava fazendo diferente."</p>
+          <p class="t-card__quote">"As aulas da Nanda me trouxeram presença e consistência em um momento bem turbulento. Viraram um compromisso comigo mesma, um tempo que eu separo para olhar para dentro, me fortalecer e me reconectar. Obrigada, Nanda, por criar esse espaço tão especial."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Renata M. · Brasília</span>
+            <span class="t-card__name">Nathalia · Dublin, Irlanda</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"A Nanda vai além do físico. Ela ensina a viver com mais consciência e presença. Uma professora que transforma de verdade."</p>
+          <p class="t-card__quote">"Nas aulas dela tem postura, respiração, encontro com meu silêncio, tem filosofia, tem yoga de verdade. Depois de algumas buscas encontrei a Nanda e nunca mais larguei."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Isabela V. · Salvador</span>
+            <span class="t-card__name">Viviane Serreti · Rio de Janeiro</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
         <div class="t-card">
-          <p class="t-card__quote">"Comecei o yoga para relaxar e acabei descobrindo uma versão mais forte e mais inteira de mim mesma. Recomendo de coração."</p>
+          <p class="t-card__quote">"As aulas de yoga da Nanda me fazem muito bem, já faz 8 anos que conheço o trabalho dela. A forma que ela apresenta a aula é muito estruturada, alinhando o corpo, a mente e o espírito naquele tempo em que se está presente na aula."</p>
           <div class="t-card__footer">
-            <span class="t-card__name">Priscila N. · Campinas</span>
+            <span class="t-card__name">Petci · Rio de Janeiro</span>
             <span class="t-card__stars">★★★★★</span>
           </div>
         </div>
       </div>
+
 
     </div>
   </section>
 
   <!-- ═══════════════════════════════════════════
-       SECTION 8 — PRICING
+       SECTION 8 — SOBRE A PROFESSORA (BIO)
   ═══════════════════════════════════════════ -->
-  <section class="pricing">
-    <h2 class="pricing__title">PLANOS</h2>
-    <div class="pricing__cards">
-
-      <div class="price-card" data-reveal>
-        <span class="price-card__name">Básico</span>
-        <div class="price-card__price">R$197</div>
-        <span class="price-card__period">por mês</span>
-        <ul class="price-card__features">
-          <li>2 aulas por semana</li>
-          <li>Acesso às aulas online</li>
-          <li>Material de apoio digital</li>
-        </ul>
+  <section class="pricing" id="sobre-nanda">
+    <div class="aulas__grid">
+      <div class="aulas__left" style="position:static" data-reveal>
+        <img src="images/bio.jpg" alt="Nanda Adarsha" style="width:100%;height:100%;object-fit:cover;min-height:360px">
       </div>
-
-      <div class="price-card price-card--featured" data-reveal>
-        <span class="price-card__badge">Mais Popular</span>
-        <span class="price-card__name">Essencial</span>
-        <div class="price-card__price">R$297</div>
-        <span class="price-card__period">por mês</span>
-        <ul class="price-card__features">
-          <li>4 aulas por semana</li>
-          <li>Acesso às aulas online</li>
-          <li>Material de apoio digital</li>
-          <li>Correção personalizada</li>
-        </ul>
+      <div class="aulas__cards" data-reveal>
+        <span class="aulas__label">Quem sou eu</span>
+        <h2 class="aulas__heading">NANDA ADARSHA</h2>
+        <p class="aulas__body">Com mais de 25 anos de dedicação ao Yoga e ao autoconhecimento, Nanda Adarsha iniciou sua trajetória de aprofundamento na prática em 2001, realizando duas formações na área. Desde 2006, compartilha seus conhecimentos como professora, conduzindo alunos por um caminho com mais equilíbrio, consciência e presença.</p>
+        <p class="aulas__body">Graduada em Educação Física e pós-graduada em Psicomotricidade, conheceu e estudou diferentes abordagens do Yoga ao longo dos anos, encontrando no Hatha Yoga sua principal referência. Complementou sua formação com estudos e vivências no Rio de Janeiro e Santa Catarina, e na Índia em dois momentos marcantes: em 2009, acompanhada do professor Pedro Kupfer, e em 2013, quando retornou com o propósito de aprofundar sua jornada espiritual, permanecendo por dois meses no Ashram de Amma, mestra espiritual de quem recebeu o nome Adarsha.</p>
+        <p class="aulas__body">Nanda acredita que o Yoga é um caminho poderoso de transformação e reconexão com a nossa essência.</p>
+        <p class="aulas__body">Atualmente, Nanda atua com aulas particulares de Yoga, nos formatos presencial e online, além de conduzir aulas presenciais para adolescentes em ambiente escolar. Também compartilha seu trabalho por meio de sua plataforma digital, Yoga com a Nanda, que reúne práticas de Yoga, meditação, pranayama e conteúdos voltados ao autoconhecimento e ao bem-estar.</p>
       </div>
-
-      <div class="price-card" data-reveal>
-        <span class="price-card__name">Imersão</span>
-        <div class="price-card__price">R$447</div>
-        <span class="price-card__period">por mês</span>
-        <ul class="price-card__features">
-          <li>Aulas ilimitadas</li>
-          <li>Mentoria mensal individual</li>
-          <li>Acesso a workshops exclusivos</li>
-          <li>Prioridade de agendamento</li>
-        </ul>
-      </div>
-
     </div>
   </section>
 
@@ -1327,13 +1350,27 @@
        SECTION 9 — FINAL CTA
   ═══════════════════════════════════════════ -->
   <section class="final-cta">
-    <img src="images/logo.png" alt="" class="final-cta__logo" data-reveal>
+    <img src="images/logo-new.png" alt="" class="final-cta__logo" data-reveal>
     <span class="final-cta__label" data-reveal>— o próximo passo é seu —</span>
     <h2 class="final-cta__heading" data-reveal>ESTÁ PRONTO<br>PARA COMEÇAR?</h2>
     <p class="final-cta__script" data-reveal>sua transformação começa agora</p>
     <div class="final-cta__buttons" data-reveal>
-      <a class="btn-gold" href="#">Agendar Agora</a>
-      <a class="btn-outline-cream" href="#">Falar no WhatsApp</a>
+      <a class="btn-gold" href="#produtos">Ver Programas</a>
+      <a class="btn-outline-cream" href="https://wa.me/5521998364101" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+    <div class="final-cta__social" data-reveal>
+      <a href="https://www.instagram.com/nanda.adarsha.yoga?stkn=cmJtenVlY3YxMW03" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://youtube.com/@nandaadarsha8018?si=OOVe6mGxN7AVq6Qp" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l6 3-6 3V9z" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://wa.me/5521998364101" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a9 9 0 00-7.8 13.5L3 21l4.6-1.2A9 9 0 1012 3z"/><path d="M8.5 9.5c.3 2.8 2.7 5.2 5.5 5.5" stroke-linecap="round"/></svg>
+      </a>
+      <a href="mailto:gaiamaayoga@gmail.com" title="E-mail" aria-label="E-mail">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M3 6l9 7 9-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
     </div>
     <p class="final-cta__footer">© 2026 Nanda Adarsha · Todos os direitos reservados</p>
   </section>
